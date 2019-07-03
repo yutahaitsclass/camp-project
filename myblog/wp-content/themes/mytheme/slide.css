@@ -1,0 +1,37 @@
+/*左右の矢印の色を変える*/
+.slick-prev:before,
+.slick-next:before {
+    color:greenyellow;
+}
+
+/*左右の矢印の位置を変える*/
+/* .slick-next { 
+   right: 20px;
+    z-index: 500;
+}
+
+.slick-prev {
+    left: 15px;
+    z-index: 600;
+} */
+/* .slider {
+    width: 100vw;
+    height: calc(100vh - 32px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+} */
+/* スライド数のドットの色を変える*/
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color:green;
+}
+
+/*スライド画像の横幅可変*/
+.slider img {
+    max-width: 100%;
+    height: auto;
+    /* object-fit:  */
+}

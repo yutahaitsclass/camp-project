@@ -1,0 +1,593 @@
+@charset "UTF-8";
+
+/*
+	Theme Name: mytheme-camp
+	Author: Yuta Yamadera
+	Version: 3.0
+
+*/
+
+@media screen and (min-width:0px) {
+  .header-PC {
+    display: none;
+  }
+
+  .header-phone {
+    display: block;
+  }
+
+  header .header-content {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  header .header-content .header-content_element {
+    flex-basis: 33%;
+    text-align: center;
+  }
+
+  header .header-content .header-content_element img {
+    width: 55px;
+  }
+
+  header .header-content .header-content_element .reservation-btn {
+    background-color: #E9A326;
+    text-align: center;
+    margin: 10px auto;
+    padding: 8px;
+    font-size: 12px;
+    width: 90px;
+    border-radius: 10px;
+  }
+
+  header .header-content .header-content_element .reservation-btn a {
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+  }
+
+  header .header-content .header-content_element nav ul li img {
+    width: 20px;
+    margin-right: 8px;
+
+  }
+}
+
+/* front-page */
+@charset "UTF-8";
+
+header .header-content {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  z-index: 1;
+  width: 100%;
+}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+  header .header-content {
+    /*　画面サイズが480pxからはここを読み込む　*/
+    position: fixed;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .header-content {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    position: relative;
+  }
+}
+
+header .header-content .header-content_element {
+  flex-basis: 33%;
+  text-align: center;
+}
+
+header .header-content .header-content_element h1 {
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: green;
+}
+
+header .header-content .header-content_element img {
+  width: 70px;
+}
+
+header .header-content .header-content_element .reservation-btn {
+  background-color: green;
+  text-align: center;
+  margin: 15px auto;
+  padding: 7px;
+  width: 80px;
+}
+
+header .header-content .header-content_element .reservation-btn a {
+  text-decoration: none;
+  color: white;
+  margin: 0 auto;
+}
+
+main .main-wrapper .slide {
+  padding-bottom: 50px;
+}
+
+main .main-wrapper .main-content h2 {
+  text-align: center;
+  margin: 30px auto;
+}
+
+main .main-wrapper .main-content .main-content_images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+  main .main-wrapper .main-content .main-content_images .main-content_image {
+    /*　画面サイズが480pxからはここを読み込む　*/
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main .main-wrapper .main-content .main-content_images .main-content_image {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    flex-basis: 50%;
+  }
+}
+
+main .main-wrapper .main-content .main-content_images .main-content_image img {
+  object-fit: cover;
+  width: 100%;
+}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+  main .main-wrapper .main-content .main-content_images .main-content_image img {
+    /*　画面サイズが480pxからはここを読み込む　*/
+    height: 60vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main .main-wrapper .main-content .main-content_images .main-content_image img {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    height: 60vh;
+  }
+}
+
+main .main-wrapper .main-content .main-content_images .main-content_image .two-images {
+  display: flex;
+}
+
+main .main-wrapper .main-content .main-content_images .main-content_image .two-images .two-images_image {
+  flex-basis: 50%;
+}
+
+main .main-wrapper .main-content .main-content_images .main-content_image .two-images .two-images_image img {
+  object-fit: cover;
+  width: 100%;
+}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+  main .main-wrapper .main-content .main-content_images .main-content_image .two-images .two-images_image img {
+    /*　画面サイズが480pxからはここを読み込む　*/
+    height: 60vw;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  main .main-wrapper .main-content .main-content_images .main-content_image .two-images .two-images_image img {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    height: 60vh;
+  }
+}
+
+main .main-wrapper .main-content .main-content_fieldmap .fieldmap-content {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+  main .main-wrapper .main-content .main-content_fieldmap .fieldmap-content .fieldmap-image {
+    /*　画面サイズが480pxからはここを読み込む　*/
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  main .main-wrapper .main-content .main-content_fieldmap .fieldmap-content .fieldmap-image {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    flex-basis: 50%;
+  }
+}
+
+main .main-wrapper .main-content .main-content_fieldmap .fieldmap-content .fieldmap-image img {
+  width: 100%;
+}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+  main .main-wrapper .main-content .main-content_fieldmap .fieldmap-content .fieldmap-text {
+    /*　画面サイズが480pxからはここを読み込む　*/
+    flex-basis: 100%;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  main .main-wrapper .main-content .main-content_fieldmap .fieldmap-content .fieldmap-text {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    flex-basis: 50%;
+    padding: 60px;
+  }
+}
+
+main .main-wrapper .main-content .main-content_fieldmap .fieldmap-content .fieldmap-text p {
+  background-color: ghostwhite;
+  padding: 20px;
+  box-shadow: 0 12px 10px -6px rgba(0, 0, 0, 0.3);
+}
+
+/*# sourceMappingURL=style.css.map */
+
+@media screen and (min-width:700px) {
+  /*300px以上で適用する内容*/
+
+  .header-phone {
+    display: none
+  }
+
+  .header-PC {
+    display: block;
+  }
+
+  .header-PC .PC-content {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .header-PC .PC-content .PC-content_logo {
+    flex-basis: 20%;
+    padding: 30px;
+  }
+
+  .header-PC .PC-content .PC-content_logo img {
+    width: 200px;
+
+  }
+
+  .header-PC .PC-content_menu ul {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 60%;
+  }
+
+  .header-PC .PC-content_menu ul li {
+    padding: 25px;
+  }
+
+  .header-PC .PC-content_menu img {
+    width: 30px;
+
+  }
+
+  .header-PC .PC-content_btn {
+    flex-basis: 20%;
+    padding: 30px;
+  }
+
+  .header-PC .PC-content_btn .reservation-btn {
+    background-color: #E9A326;
+    text-align: center;
+    margin: 10px auto;
+    padding: 8px;
+
+    width: 150px;
+    border-radius: 10px;
+
+
+  }
+
+  .header-PC .PC-content_btn .reservation-btn a {
+    color: white;
+  }
+
+
+}
+
+
+header .header2-content_logo {
+  text-align: center;
+}
+
+header .header2-content_logo img {
+  width: 255px;
+  margin: 0 auto;
+
+}
+
+header .header2-wrapper {
+  position: relative;
+}
+
+header .header2-content_btn {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+
+header .header2-content_btn .reservation-btn {
+  background-color: #E9A326;
+  text-align: center;
+  margin: 10px auto;
+  padding: 8px;
+
+  width: 150px;
+  border-radius: 10px;
+
+}
+
+header .header2-content_btn .reservation-btn a {
+  text-decoration: none;
+  color: white;
+  margin: 0 auto;
+}
+
+/* 固定ページ */
+/* page.php */
+
+.post-wrapper .post-content {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+.post-wrapper .post-content .post-content_body h2 {
+  background-color: green;
+  color: white;
+  font-size: 24px;
+  padding: 10px 30px;
+  text-align: left;
+  margin-top: 80px;
+}
+
+.post-wrapper .post-content .post-content_body p {
+
+  font-size: 20px;
+  margin: 30px 0;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.post-wrapper .post-content .post-content_body h3 {
+  text-align: left;
+  font-size: 24px;
+
+
+}
+
+.post-wrapper .post-content .post-content_body h3:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+  background: green;
+  vertical-align: 1px;
+
+}
+
+.front-news {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.front-news .news-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.front-news .news-list li {
+  flex-basis: 300px;
+  border: 1px solid green;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+/* 
+.front-news .news-list .news-content_excerpt {
+  padding: 30px;
+} */
+
+/* index */
+
+
+.blog-content {
+  padding: 10px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 70vw;
+  margin: 20px auto;
+  text-align: center;
+  border: 1px solid rgb(201, 201, 201);
+}
+
+.blog-content .blog-content_image {
+
+  flex-basis: 50%;
+
+}
+
+.blog-content .blog-content_area {
+  padding: 30px;
+  flex-basis: 50%;
+}
+
+.blog-content .blog-content_image img {
+  width: 90%;
+  height: auto;
+}
+
+.blog-content h2 {
+
+  font-size: 20px;
+  /* padding: 10px 30px; */
+  /* text-align: left; */
+  /* margin-top: 80px; */
+}
+
+.blog-content .blog-content_passenger {
+  padding: 5px;
+
+}
+
+.blog-content h2 a {
+  color: green;
+}
+
+.blog-content .blog-content_passenger p {
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+.blog-content .more-link {
+  padding: 5px 5px;
+  border: 1px solid green;
+  border-radius: 20px;
+}
+
+/* footer */
+
+footer .footer-wrapper .footer-content .footer-content_main .content-main_info {
+  margin: 10px auto;
+}
+
+footer .footer-wrapper .footer-content .footer-content_main .content-main_info p {
+  text-align: center;
+}
+
+footer .footer-wrapper .footer-content .footer-content_main .content-main_sns ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer .footer-wrapper .footer-content .footer-content_main .content-main_sns ul li {
+  flex-basis: 15%;
+}
+
+footer .footer-wrapper .footer-content .footer-content_main .content-main_sns ul li a p {
+  text-align: center;
+}
+
+footer .footer-wrapper .footer-content .footer-content_main .content-main_sns ul li a p img {
+  margin: 0 auto;
+}
+
+footer .footer-wrapper .footer-content .footer-content_menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer .footer-wrapper .footer-content .footer-content_menu ul li {
+  flex-basis: 33.3%;
+  text-align: center;
+  border: 1px solid #cecece;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer .footer-wrapper .footer-content .footer-content_copyright {
+  text-align: center;
+}
+
+
+/* single */
+
+
+
+.post-wrapper .post-content_title h2 {
+  background-color: green;
+
+  font-size: 24px;
+  padding: 10px 30px;
+  text-align: left;
+  margin-top: 80px;
+}
+
+.post-wrapper .post-content_title h2 a {
+  color: white;
+}
+
+
+
+/* pagination */
+
+
+.pagination {
+  clear: both;
+  padding: 20px 0;
+  position: relative;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.pagination-box {
+  display: inline-block;
+}
+
+.pagination span,
+.pagination a {
+  display: block;
+  float: left;
+  margin: 2px 2px 2px 0;
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;
+  width: auto;
+  color: #fff;
+  /* 通常の文字色 */
+  background: green;
+  /* 通常の背景色 */
+}
+
+.pagination a:hover {
+  color: green;
+  /* マウスホバー時の文字色 */
+  background: #F9D635;
+  /* マウスホバー時の背景色 */
+}
+
+.pagination .current {
+  padding: 10px 15px 10px 15px;
+  color: green;
+  /* 現在のページの文字色 */
+  background: #F9D635;
+  /* 現在のページの背景色 */
+}
+
+@media only screen and (max-width: 413px) {
+  .pagination {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .pagination span,
+  .pagination a {
+    padding: 8px 10px 8px 10px;
+  }
+
+  .pagination .current {
+    padding: 8px 10px 8px 10px;
+  }
+}
+
+p {
+  word-wrap: break-word;
+}
